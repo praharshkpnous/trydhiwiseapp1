@@ -47,7 +47,7 @@ class OnboardingScreen extends GetWidget<OnboardingController> {
                                                           Alignment.centerLeft,
                                                       child: CommonImageView(
                                                           svgPath: ImageConstant
-                                                              .imgRectangle3,
+                                                              .imgBackground,
                                                           height:
                                                               getVerticalSize(
                                                                   552.00),
@@ -59,78 +59,10 @@ class OnboardingScreen extends GetWidget<OnboardingController> {
                                                           .bottomCenter,
                                                       child: Padding(
                                                           padding: getPadding(
-                                                              left: 112,
+                                                              left: 20,
                                                               top: 53,
-                                                              right: 112,
+                                                              right: 20,
                                                               bottom: 53),
-                                                          child: Row(
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .center,
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .min,
-                                                              children: [
-                                                                Text(
-                                                                    "msg_already_have_an"
-                                                                        .tr,
-                                                                    overflow:
-                                                                        TextOverflow
-                                                                            .ellipsis,
-                                                                    textAlign:
-                                                                        TextAlign
-                                                                            .left,
-                                                                    style: AppStyle
-                                                                        .txtRobotoRomanMedium12),
-                                                                Padding(
-                                                                    padding:
-                                                                        getPadding(
-                                                                            left:
-                                                                                5),
-                                                                    child: Text(
-                                                                        "lbl_login_here"
-                                                                            .tr,
-                                                                        overflow:
-                                                                            TextOverflow
-                                                                                .ellipsis,
-                                                                        textAlign:
-                                                                            TextAlign
-                                                                                .left,
-                                                                        style: AppStyle
-                                                                            .txtRobotoRomanMedium12Teal400
-                                                                            .copyWith(decoration: TextDecoration.underline)))
-                                                              ])))
-                                                ]))),
-                                    Align(
-                                        alignment: Alignment.bottomLeft,
-                                        child: Container(
-                                            height: getVerticalSize(438.00),
-                                            width: size.width,
-                                            margin: getMargin(
-                                                top: 111, bottom: 111),
-                                            child: Stack(
-                                                alignment:
-                                                    Alignment.bottomCenter,
-                                                children: [
-                                                  Align(
-                                                      alignment:
-                                                          Alignment.centerLeft,
-                                                      child: CommonImageView(
-                                                          imagePath:
-                                                              ImageConstant
-                                                                  .imgClouds,
-                                                          height:
-                                                              getVerticalSize(
-                                                                  438.00),
-                                                          width:
-                                                              getHorizontalSize(
-                                                                  428.00))),
-                                                  Align(
-                                                      alignment: Alignment
-                                                          .bottomCenter,
-                                                      child: Padding(
-                                                          padding: getPadding(
-                                                              all: 62),
                                                           child: Column(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -147,9 +79,9 @@ class OnboardingScreen extends GetWidget<OnboardingController> {
                                                                         242.00),
                                                                     margin: getMargin(
                                                                         left:
-                                                                            31,
+                                                                            42,
                                                                         right:
-                                                                            30),
+                                                                            42),
                                                                     child: Text(
                                                                         "msg_welcome_to_nous"
                                                                             .tr,
@@ -160,31 +92,32 @@ class OnboardingScreen extends GetWidget<OnboardingController> {
                                                                                 .center,
                                                                         style: AppStyle
                                                                             .txtRobotoRomanBold32)),
-                                                                Align(
-                                                                    alignment:
-                                                                        Alignment
-                                                                            .centerLeft,
-                                                                    child: Container(
-                                                                        width: getHorizontalSize(
-                                                                            303.00),
-                                                                        margin: getMargin(
-                                                                            top:
-                                                                                30),
-                                                                        child: Text(
-                                                                            "msg_meet_chat_and"
-                                                                                .tr,
-                                                                            maxLines:
-                                                                                null,
-                                                                            textAlign:
-                                                                                TextAlign.center,
-                                                                            style: AppStyle.txtRobotoRomanMedium24))),
+                                                                Container(
+                                                                    width: getHorizontalSize(
+                                                                        303.00),
+                                                                    margin: getMargin(
+                                                                        left:
+                                                                            42,
+                                                                        top: 30,
+                                                                        right:
+                                                                            42),
+                                                                    child: Text(
+                                                                        "msg_meet_chat_and"
+                                                                            .tr,
+                                                                        maxLines:
+                                                                            null,
+                                                                        textAlign:
+                                                                            TextAlign
+                                                                                .center,
+                                                                        style: AppStyle
+                                                                            .txtRobotoRomanMedium24)),
                                                                 Padding(
                                                                     padding: getPadding(
                                                                         left:
-                                                                            31,
+                                                                            42,
                                                                         top: 64,
                                                                         right:
-                                                                            31),
+                                                                            42),
                                                                     child: CommonImageView(
                                                                         svgPath:
                                                                             ImageConstant
@@ -192,19 +125,48 @@ class OnboardingScreen extends GetWidget<OnboardingController> {
                                                                         height: getVerticalSize(
                                                                             17.00),
                                                                         width: getHorizontalSize(
-                                                                            71.00)))
+                                                                            71.00))),
+                                                                CustomButton(
+                                                                    width: 388,
+                                                                    text: "lbl_sign_up"
+                                                                        .tr
+                                                                        .toUpperCase(),
+                                                                    margin: getMargin(
+                                                                        top:
+                                                                            30),
+                                                                    onTap:
+                                                                        onTapSignup,
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .centerLeft),
+                                                                Padding(
+                                                                    padding: getPadding(
+                                                                        left:
+                                                                            42,
+                                                                        top: 30,
+                                                                        right:
+                                                                            42),
+                                                                    child: Row(
+                                                                        mainAxisAlignment:
+                                                                            MainAxisAlignment
+                                                                                .center,
+                                                                        crossAxisAlignment:
+                                                                            CrossAxisAlignment
+                                                                                .center,
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        children: [
+                                                                          Text(
+                                                                              "msg_already_have_an".tr,
+                                                                              overflow: TextOverflow.ellipsis,
+                                                                              textAlign: TextAlign.left,
+                                                                              style: AppStyle.txtRobotoRomanMedium12),
+                                                                          Padding(
+                                                                              padding: getPadding(left: 5),
+                                                                              child: Text("lbl_login_here".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoRomanMedium12Teal400.copyWith(decoration: TextDecoration.underline)))
+                                                                        ]))
                                                               ])))
-                                                ]))),
-                                    CustomButton(
-                                        width: 388,
-                                        text: "lbl_sign_up".tr.toUpperCase(),
-                                        margin: getMargin(
-                                            left: 20,
-                                            top: 94,
-                                            right: 20,
-                                            bottom: 94),
-                                        onTap: onTapSignup,
-                                        alignment: Alignment.bottomCenter)
+                                                ])))
                                   ]))))
                 ]))));
   }

@@ -7,9 +7,6 @@ class OnboardingController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    Future.delayed(const Duration(milliseconds: 3000), () {
-      Get.toNamed(AppRoutes.signupScreen);
-    });
   }
 
   @override

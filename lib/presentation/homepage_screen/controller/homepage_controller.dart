@@ -3,7 +3,7 @@ import 'package:dhiwiseflutterfromfigma/presentation/homepage_screen/models/home
 import 'package:flutter/material.dart';
 
 class HomepageController extends GetxController {
-  TextEditingController groupNineController = TextEditingController();
+  TextEditingController groupNinetyFourController = TextEditingController();
 
   Rx<HomepageModel> homepageModelObj = HomepageModel().obs;
 
@@ -15,6 +15,6 @@ class HomepageController extends GetxController {
   @override
   void onClose() {
     super.onClose();
-    groupNineController.dispose();
+    groupNinetyFourController.dispose();
   }
 }

@@ -3,15 +3,15 @@ import 'package:dhiwiseflutterfromfigma/presentation/signup_screen/models/signup
 import 'package:flutter/material.dart';
 
 class SignupController extends GetxController {
-  TextEditingController groupFiveController = TextEditingController();
+  TextEditingController firstNameController = TextEditingController();
 
-  TextEditingController groupOneController = TextEditingController();
+  TextEditingController lastNameController = TextEditingController();
 
-  TextEditingController groupFourController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
 
-  TextEditingController groupThreeController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
-  TextEditingController groupTwoController = TextEditingController();
+  TextEditingController confirmPasswordOneController = TextEditingController();
 
   Rx<SignupModel> signupModelObj = SignupModel().obs;
 
@@ -23,10 +23,10 @@ class SignupController extends GetxController {
   @override
   void onClose() {
     super.onClose();
-    groupFiveController.dispose();
-    groupOneController.dispose();
-    groupFourController.dispose();
-    groupThreeController.dispose();
-    groupTwoController.dispose();
+    firstNameController.dispose();
+    lastNameController.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+    confirmPasswordOneController.dispose();
   }
 }

@@ -121,7 +121,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                 CustomSearchView(
                   width: 388,
                   focusNode: FocusNode(),
-                  controller: controller.groupNineController,
+                  controller: controller.groupNinetyFourController,
                   hintText: "lbl_search".tr,
                   margin: getMargin(
                     top: 29,
@@ -135,7 +135,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                     ),
                     child: IconButton(
                       onPressed: () {
-                        controller.groupNineController.clear;
+                        controller.groupNinetyFourController.clear;
                       },
                       icon: Icon(
                         Icons.clear,
@@ -192,7 +192,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                                   ),
                                 ),
                                 child: CommonImageView(
-                                  imagePath: ImageConstant.imgRectangle13,
+                                  imagePath: ImageConstant.imgImg1,
                                   height: getVerticalSize(
                                     186.00,
                                   ),
@@ -242,7 +242,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                             ),
                           ),
                           child: CommonImageView(
-                            imagePath: ImageConstant.imgRectangle14,
+                            imagePath: ImageConstant.imgImg2,
                             height: getVerticalSize(
                               186.00,
                             ),
@@ -275,7 +275,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                                   ),
                                 ),
                                 child: CommonImageView(
-                                  imagePath: ImageConstant.imgRectangle15,
+                                  imagePath: ImageConstant.imgImg3,
                                   height: getVerticalSize(
                                     186.00,
                                   ),
@@ -540,7 +540,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                                     ),
                                   ),
                                   child: CommonImageView(
-                                    imagePath: ImageConstant.imgRectangle18,
+                                    imagePath: ImageConstant.imgImage,
                                     height: getVerticalSize(
                                       120.00,
                                     ),
@@ -786,8 +786,7 @@ class HomepageScreen extends GetWidget<HomepageController> {
                                     ),
                                   ),
                                   child: CommonImageView(
-                                    imagePath:
-                                        ImageConstant.imgRectangle18120x333,
+                                    imagePath: ImageConstant.imgImage120x333,
                                     height: getVerticalSize(
                                       120.00,
                                     ),
