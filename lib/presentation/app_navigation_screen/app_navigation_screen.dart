@@ -35,7 +35,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                 alignment: Alignment.centerLeft,
                                 child: Padding(
                                     padding: getPadding(left: 20),
-                                    child: Text("msg_check_your_app".tr,
+                                    child: Text("msg_check_your_app_s".tr,
                                         overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.center,
                                         style: AppStyle.txtRobotoRegular16))),

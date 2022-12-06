@@ -19,13 +19,13 @@ final Map<String, String> enUs = {
   "lbl_google": "Google",
   "msg_let_s_get_a_few": "Let’s get a few details before we\ncontinue.",
   "lbl_app_navigation": "App Navigation",
+  "msg_check_your_app_s":
+      "Check your app's UI from the below demo screens of your app.",
   "lbl_more": "More",
   "lbl_2_min_ago": "2 min ago",
   "msg_welcome_to_nous": "Welcome to\nNousean Corner!",
   "lbl_homepage": "Homepage",
   "msg_terms_of_servic": "Terms of Service\n",
-  "msg_check_your_app":
-      "Check your app's UI from the below demo screens of your app.",
   "lbl_sign_up": "SIGN UP",
   "lbl_sign_up2": "Sign Up",
   "lbl_password": "Password",
